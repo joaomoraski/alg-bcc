@@ -31,8 +31,7 @@ int Partition(int *v, int p, int r) {
 
 int RandomPartition(int *v, int p, int r) {
     int x, i;
-    int random = p + rand() % (r - p + 1);
-    Troca(v, random, r);
+    Troca(v, (p+r)/2, r);
     x = v[r];
     i = p - 1;
     for (int j = p; j < r; j++) {
@@ -48,10 +47,6 @@ int RandomPartition(int *v, int p, int r) {
 int MedPartition(int *v, int p, int r) {
     int x;
     int i, j;
-    int aux[3] = {v[p], v[r], v[(int) (p + r) / 2]};
-    if (aux[0] >= aux[1] && aux[1] >= aux[2]) Troca(v, aux[1], r);
-    if (aux[1] >= aux[0] && aux[0] >= aux[2]) Troca(v, aux[0], r);
-    if (aux[0] >= aux[2] && aux[2] >= aux[1]) Troca(v, aux[2], r);
     x = v[r];
     i = p - 1;
     for (j = p; j < r; j++) {

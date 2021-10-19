@@ -4,4 +4,4 @@ run:
 	./main
 
 clean:
-	rm -rfd quicksort.o mergesort.o main arquivo.txt a.out
+	rm -rfd quicksort.o mergesort.o main  a.out
