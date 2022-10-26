@@ -27,7 +27,6 @@ func main() {
 		calls = -1
 		var resultado int = fibonnachos(number)
 		i++
-		// fib(5) = 14 calls = 5
 		fmt.Printf("fib(%d) = %d calls = %d\n", number, calls, resultado)
 	}
 
