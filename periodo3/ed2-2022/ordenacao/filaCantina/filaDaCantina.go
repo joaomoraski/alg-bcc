@@ -19,18 +19,16 @@ func OrdenarAlunos(notas []int) int {
 
 func main() {
 	var (
-		numeroAlunos   int
-		numeroSorteado int
-		i              int
-		nome           string
+		repeat int
+		i      int
 	)
-	nomes := []string{}
-	fmt.Scanf("%d %d", &numeroAlunos, &numeroSorteado)
-	for i < numeroAlunos {
-		fmt.Scanf("%s", &nome)
-		nomes = append(nomes, nome)
-		i++
+	fmt.Scanf("%d", &repeat)
+	for i < repeat {
+		// fmt.Scanf("%s", &nome)
+		// nomes = append(nomes, nome)
+		// i++
 	}
-	nomes = OrdenarNomes(nomes)
-	fmt.Println(nomes[numeroSorteado-1])
+	// nomes = OrdenarNomes(nomes)
+	// fmt.Println(nomes[numeroSorteado-1])
+
 }
